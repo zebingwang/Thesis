@@ -1,0 +1,63 @@
+%---------------------------------------------------------------------------%
+%->> Frontmatter
+%---------------------------------------------------------------------------%
+%-
+%-> 生成封面
+%-
+
+\maketitle% 生成中文封面
+\MAKETITLE% 生成英文封面
+%-
+%-> 作者声明
+%-
+\makedeclaration% 生成声明页
+%-
+%-> 中文摘要
+%-
+\intobmk\chapter*{摘\quad 要}% 显示在书签但不显示在目录
+\setcounter{page}{1}% 开始页码
+\pagenumbering{Roman}% 页码符号
+
+2012年，质量约为125$\GeV$ 的希格斯玻色子 (Higgs) 被欧洲核子研究中心 (CERN) 大型强子对撞机 (Large Hadron Collider, LHC) 上的紧凑型缪子螺线圈（Compact Muon Solenoid, CMS）和超环面仪器（A Toroidal LHC Apparatus, ATLAS）实验所发现，标志着标准模型 (SM) 所预言的最后一块拼图被找到。希格斯玻色子作为标准模型中唯一的标量粒子，赋予了其他所有基本粒子
+以质量，这一发现也使得预言希格斯玻色子的两位科学家：François Englert 和 Peter Higgs 获得了2013年的诺贝尔物理学奖。
+
+自从希格斯粒子被发现以后，CMS和ATLAS两个合作组在希格斯玻色子的不同产生和衰变模式下，对它的自旋、宇称、宽度和耦合等性质进行了精确的测量，所有的测量结果都与标准模型的预测相符合。然而，对希格斯玻色子衰变分支比的测量结果表明，希格斯玻色子衰变到不可探测的末态分支比在95\%的置信水平上限是18\%。这就意味着其中可能蕴含着目前没有观测到的超出标准模型的新物理 (BSM)，比如：2HDM+S模型、类轴子模型 (ALPs)、暗物质等等。
+
+类轴子模型可以解决一些目前粒子物理实验上观测到的反常物理现象，比如：缪子反常磁矩以及暗物质等等。本论文研究了在类轴子模型下，利用希格斯玻色子在两轻子加两光子的衰变末态下对类轴子进行寻找。具体衰变过程为希格斯玻色子奇异衰变到一个Z玻色子和一个类轴子，其中Z玻色子衰变到两个轻子，类轴子衰变到两个光子。分析利用了大型强子对撞机上的CMS探测器于2016至2018年收集到的质心能量为13~\si{\TeV}的数据，总计积分亮度为138~\si{fb^{-1}}。
+
+本论文给出了对希格斯玻色子衰变到两轻子加两光子末态的首次测量结果。在低质量范围内，由希格斯玻色子衰变产生的类轴子会具有非常高的横动量，从而使得类轴子衰变产生的两个光子具有非常小的角距离，在探测器中无法辨别这两个光子。本论文研究了CMS实验上传统的光子辨别算法并设计了新的光子鉴别算法，使得探测器在类轴子低质量范围内的探测效率获得了极大地提升。
+
+在信号提取过程中，假光子、假轻子以及与信号无关的其他标准模型过程作为本底极大地限制了信号的灵敏度。本论文采取了提升决策树（Boosted Decision Trees, BDTs）的方法对信号和本底进行了区分，使得在保持信号效率达到80\%的条件下可以拒绝99.9\%的本底事例。
+
+最终结果利用了轮廓极大似然法，通过使用信号和本底模型对数据进行拟合得出了在95\%置信度下的反应截面上限。信号模型通过拟合信号MC得出；为了降低对模拟的依赖，本底模型采取了数据驱动（data-driven）的方法对数据直接进行本底拟合得出。
+
+本分析在质量范围为1--30$\GeV$之间对类轴子进行了寻找，这是对希格斯玻色子衰变到两个轻子和两个光子末态的首次测量，结果表明没有发现明显的信号超出。1$\GeV$和30$\GeV$对应的观测（期望）的反应截面上限为18.9（19.3）\si{fb}和4.8（6.9）\si{fb}。本分析也对类轴子模型的耦合参数进行了限制。
+
+\keywords{LHC，CMS，希格斯玻色子，类轴子，新物理}% 中文关键词
+%-
+%-> 英文摘要
+%-
+\intobmk\chapter*{Abstract}% 显示在书签但不显示在目录
+
+In 2012, the CMS and ATLAS experiments at the Large Hadron Collider (LHC) of the European Organization for Nuclear Research (CERN) discovered a Higgs boson with the mass of approximately 125$\GeV$. This marked the completeness of the Standard Model. As the only scalar particle in the Standard Model, the Higgs boson gives mass to all other elementary particles. The discovery of the Higgs boson also led to the awarding of the 2013 Nobel Prize in Physics to François Englert and Peter Higgs, who had predicted its existence.
+
+Since the discovery of the Higgs boson, the CMS and ATLAS collaborations have conducted precise measurements of its spin, parity, width, and couplings in various production and decay modes. These measurements have all been found to be consistent with the predictions of the Standard Model. However, measurements of the Higgs boson decay branching ratios have indicated that the fraction of decays to invisible final states is constrained to be less than 18\% at the 95\% confidence level. This suggests the possibility of new physics beyond the Standard Model (BSM), such as the 2HDM+S model, axion-like particles (ALPs) models, dark matter, and others, which may be manifesting themselves in these invisible decay channels.
+   
+The ALPs model has the potential to explain several anomalous phenomena observed in particle physics experiments, including the anomalous magnetic moment of the muon and dark matter, among others.
+This paper investigates the search for axion-like particles in the decay of the Higgs boson to two leptons and two photons in the context of the ALPs model. Specifically, the Higgs boson decays anomalously to a Z boson and an axion-like particle, where the Z boson decays to two leptons, and the axion-like particle decays to two photons. The analysis uses the data collected by the CMS detector at the LHC from 2016 to 2018, with a center-of-mass energy of 13~\si{\TeV} and an integrated luminosity of 138~\si{fb^{-1}}.
+
+
+This paper presents the first measurement results on the measurements of the decay of the Higgs boson into two leptons and two photons. In the low-mass range, the pseudoscalar particles produced by the decay of the Higgs boson have very high transverse momentum, causing the two photons produced by the decay of the pseudoscalar particles to have a very small angular separation. This cause the difficulty to distinguish the two photons in the detector. This paper studies the traditional photon identification algorithm used in the CMS experiment, and designs a new photon ID, greatly improving the detector's detection efficiency in the low mass range of the pseudoscalar mass range.
+
+During the process of signal extraction, fake photons, fake leptons, and other standard model processes that are unrelated to the signal can significantly limit the sensitivity of the signal. To address this issue, this paper employs Boost Decision Trees (BDTs) to distinguish between signal and background, achieving a rejection rate of 99.9\% for background events while maintaining a signal efficiency of 80\%.
+
+The final result utilized the profile likelihood method, which involved fitting the signal and background models to the data to obtain the upper limit on the cross section at a 95\% confidence level. The signal model was obtained by fitting the signal Monte Carlo (MC). To reduce dependence on simulations, a data-driven method was adopted for the background model, which involved directly fitting the background to the data.
+
+This analysis searched for axion-like particles in the mass range of 1--30$\GeV$, representing the first measurement of Higgs boson decay into two leptons and two photons. The results indicated no significant signal beyond the expected background. The observed (expected) upper limits on the cross section at 1$\GeV$ and 30$\GeV$ were 18.9 (19.3) \si{fb} and 4.8 (6.9) \si{fb}, respectively. Additionally, this analysis placed constraints on the coupling parameters of the axion-like particle model.
+
+\KEYWORDS{LHC, CMS, Higgs, ALPs, BSM}% 英文关键词
+
+\pagestyle{enfrontmatterstyle}%
+\cleardoublepage\pagestyle{frontmatterstyle}%
+
+%---------------------------------------------------------------------------%
